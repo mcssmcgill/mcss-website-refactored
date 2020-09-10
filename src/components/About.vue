@@ -5,7 +5,7 @@
       <div style=" margin-left: auto; margin-right: auto; display: block; text-align: center;">
         <h1 class="about-us" style="text-align: center; font-size: 30px; font-family: IKEABold;">ABOUT <span style="font-size: 30px; color: #be0819;">MCSS</span></h1>
         <hr class="hr1">
-        <p style="margin-right: 10%; margin-left: 10%; margin-top: 2%; font-family: Proxima; font-size: 1.5rem;">MCSS, McGill Chinese Students' Society is the largest and most influential cultural student 
+        <p style="margin-right: 10%; margin-left: 10%; margin-top: 2%; font-family: Proxima; font-size: 1.5rem; text-align: justify;">MCSS, McGill Chinese Students' Society is the largest and most influential cultural student 
           organization in Eastern Canada. With over <strong style="font-family: Proxima; font-size: 1.5rem;">15 events per year and 40 years of history</strong>, we provide 
           a variety of events to our <strong style="font-family: Proxima; font-size: 1.5rem;">over 1,500 active members</strong> and help our members succeed in school and life. 
           Our short-term goal is to provide our students with valuable events to make their student life more 
@@ -26,14 +26,12 @@
       <div style=" margin-left: auto; margin-right: auto; display: block; text-align: center;">
         <h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">WHY <span style="font-size: 30px; color: #be0819;">MCSS</span></h1>
         <hr class="hr1">
-        <p style="margin-right: 10%; margin-left: 10%; margin-top: 2%; font-family: Proxima; font-size: 1.5rem;">MCSS has had a long and storied history of amazing 
+        <p style="margin-right: 10%; margin-left: 10%; margin-top: 2%; font-family: Proxima; font-size: 1.5rem; text-align: justify;">MCSS has had a long and storied history of amazing 
           events, from <strong style="font-family: Proxima; font-size: 1.5rem;">our annual Ski and New York Trips, to Be There or Be Square and 
           hosting Wong Fu Productions.</strong>
           <br /><br /> 
           With MCSS, you’ll create unforgettable memories, have a blast, and learn a thing or 
-          two about event planning in the process.
-          <br /><br /> 
-          MCSS is a fun, loving, and close-knit family away from home!
+          two about event planning in the process. MCSS is a fun, loving, and close-knit family away from home!
           <br /><br /> 
           We accept executives from all around the world; <strong style="font-family: Proxima; font-size: 1.5rem;">you don’t have to be Chinese or even Asian!</strong>
           <br /><br /> 
@@ -284,7 +282,7 @@ export default {
           role: 'VP Media',
           image: require('../assets/Members/ivy.jpg'),
           hometown: 'Toronto, ON',
-          major: 'U0 Nursingg',
+          major: 'U0 Nursing',
           flipped: false,
         },
         {
@@ -459,6 +457,23 @@ export default {
       margin-left: 5px;
       margin-right: 5px;
     }
+    .card-container-pres {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #be0819;
+      border-radius: 7px;
+      width: 60%;
+      padding-top: 90%; /* Aspect Ratio */
+      position: relative; /* If you want text inside of it */
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      -moz-box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      will-change: transform;
+    }
   }
   @media screen and (max-width: 840px) {
     .intro-container-1 {
@@ -508,6 +523,31 @@ export default {
     }
     .members li{
       width: 95%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 25px;
+    }
+    .members li{
+      width: 95%;
+    }
+    .card-container-pres {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #be0819;
+      border-radius: 7px;
+      width: 80%;
+      padding-top: 120%; /* Aspect Ratio */
+      position: relative; /* If you want text inside of it */
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      -moz-box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      box-shadow: 9px 10px 22px -8px rgba(209,193,209,.5);
+      will-change: transform;
     }
   }
 </style>
