@@ -1,19 +1,19 @@
 <template>
   <div class="events">
-    <h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">FALL 2020 <br><span style="font-size: 30px; color: #be0819;">RECRUITMENT</span></h1>
+    <h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">FALL 2020 <br><span style="font-size: 30px; color: #be0819;">NEW RECRUITS</span></h1>
     <hr class="hr1">
-    <div class="event2"><a href="https://www.facebook.com/events/3209510255834127" target="_blank"><b-img-lazy :src="require('../assets/About/recruiting-landscape.jpg')" alt="New Recruit Winter 2020" style="border-radius: 7px;" /></a></div>
+    <div class="event2"><b-img-lazy :src="require('../assets/Welcome Post 2020 Fall.png')" alt="New Recruit Fall 2020" style="border-radius: 7px;" /></div>
     
     <hr class="hr2">
-    <h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">NEW <span style="font-size: 30px; color: #be0819;">RECRUITS</span></h1>
+    <h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">WINTER 2020 <br><span style="font-size: 30px; color: #be0819;">NEW RECRUITS</span></h1>
     <hr class="hr1">
     <div class="event2"><b-img-lazy :src="require('../assets/About/New Recruits Winter 2020.png')" alt="New Recruit Winter 2020" style="border-radius: 7px;" /></div>
     
     <hr class="hr2">
-    <div id="sogaeting"><h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">SOGAETING -<span style="font-size: 30px; color: #be0819;"> FEB 14 2020</span></h1></div>
+    <div id="sogaeting"><h1 style="text-align: center; font-size: 30px; font-family: IKEABold;">SOGAETING <br><span style="font-size: 30px; color: #be0819;"> FEB 14 2020</span></h1></div>
     <hr class="hr1">
     <div style="width: 80%; margin-right: auto; margin-left: auto; display: block;">
-      <vueper-slides lazy lazy-load-on-drag :slide-ratio="485 / 728" slide-image-inside>
+      <vueper-slides lazy lazy-load-on-drag :slide-ratio="485 / 728" slide-image-inside :touchable="false">
         <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image">
           <template v-slot:loader>
             <i class="icon icon-loader spinning"></i>
