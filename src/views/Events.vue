@@ -25,7 +25,11 @@
         slide-image-inside
         :touchable="false"
       >
-        <vueper-slide v-for="(slide, i) in $vssWidth > 600 ? desktop_slides : mobile_slides" :key="i" :image="slide.image">
+        <vueper-slide
+          v-for="(slide, i) in $vssWidth > 600 ? desktop_slides : mobile_slides" 
+          :key="i"
+          :image="slide.image"
+        >
           <template v-slot:loader>
             <i class="icon icon-loader spinning"></i>
             <span>Loading...</span>
