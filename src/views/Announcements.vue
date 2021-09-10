@@ -1,15 +1,31 @@
 <template>
   <div class="events">
-    <h1>FUNDRAISER FOR THE <span>ASIAN CANADIAN COMMUNITY</span></h1>
+    <h1>MCSS <span>FALL RECRUITMENT</span></h1>
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1618877486/MCSS/Events/dfad.png"
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631305841/MCSS/mcss_fall_2021_zli4cc.jpg"
         :class="{toggled: toggle}"
         alt="MCSS x DFAD"
         style="border-radius: 7px;"
       />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/204511511074864/" target="_blank">
+      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/551520242720121" target="_blank">
+        <div class="middle">
+          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
+        </div>
+      </a>
+    </div>
+    <hr class="hr2">
+    <h1>MCSS <span>WELCOME PARTY</span></h1>
+    <hr class="hr1">
+    <div class="event-container event2 upcoming" v-on:click="wp_toggle = !wp_toggle">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631306715/MCSS/welcome_party_ig_a2tsw5.jpg"
+        :class="{toggled: wp_toggle}"
+        alt="MCSS x DFAD"
+        style="border-radius: 7px;"
+      />
+      <a class="event-redirect" v-if="wp_toggle" href="https://www.facebook.com/events/828728397816392" target="_blank">
         <div class="middle">
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
@@ -32,50 +48,6 @@
       </a>
     </div>
     <hr class="hr2">
-    <h1>OUR MEMBERSHIP CARD <span>IS HERE!</span></h1>
-    <hr class="hr1">
-    <div class="intro-container-2">
-      <div class="intro-img">
-        <b-img-lazy
-          src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139752/MCSS/card2020_ap1nc4.png"
-          alt="Group Picture!"
-          width=542
-          height=330
-          style="border-radius: 7px;"
-          class="group-pic"
-        />
-      </div>
-      <div class="centered">
-        <p class="card-text">
-          With our MCSS Membership card, students can get numerous discounts
-          at various restaurants and stores across the city.
-          Get yours today for only <b>$5</b> in our shop.
-          <br /><br />
-          After your purchase, you should receive an email containing the activation code.
-          Make sure to check your spam folder if it doesn't arrive in your inbox.
-          <br /><br />
-          Once you have your activation code, please follow our tutorial
-          to activate your membership card:
-        </p>
-        <div class="buttons">
-          <button
-            class="card-btn"
-            @click="redirectToCard()"
-          >
-            PURCHASE
-          </button>
-          <a
-            href="https://s3.ca-central-1.amazonaws.com/mcss.ca/Instruction-Manual.pdf"
-            class="tutorial-btn"
-            target="_blank"
-          >
-            GO TO TUTORIAL
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr class="hr2">
-
     <h1>FALL 2020 <br><span>NEW RECRUITS</span></h1>
     <hr class="hr1">
     <div class="event2">
@@ -108,15 +80,12 @@
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides';
-import 'vueperslides/dist/vueperslides.css';
-
 export default {
   name: 'announcements',
-  components: { VueperSlides, VueperSlide },
   data() {
     return {
       toggle: false,
+      wp_toggle: false,
       slides: [
         {
           title: 'Sogaeting 1',

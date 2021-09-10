@@ -4,12 +4,25 @@
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1618877486/MCSS/Events/dfad.png"
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631305841/MCSS/mcss_fall_2021_zli4cc.jpg"
         :class="{toggled: toggle}"
         alt="MCSS x DFAD"
         style="border-radius: 7px;"
       />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/204511511074864/" target="_blank">
+      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/551520242720121" target="_blank">
+        <div class="middle">
+          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
+        </div>
+      </a>
+    </div>
+    <div class="event-container event2 upcoming" v-on:click="wp_toggle = !wp_toggle">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/v1631306021/MCSS/welcome_party_gzvcrr.png"
+        :class="{toggled: wp_toggle}"
+        alt="MCSS x DFAD"
+        style="border-radius: 7px;"
+      />
+      <a class="event-redirect" v-if="wp_toggle" href="https://www.facebook.com/events/828728397816392" target="_blank">
         <div class="middle">
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
@@ -26,7 +39,7 @@
         :touchable="false"
       >
         <vueper-slide
-          v-for="(slide, i) in $vssWidth > 600 ? desktop_slides : mobile_slides" 
+          v-for="(slide, i) in $vssWidth > 600 ? desktop_slides : mobile_slides"
           :key="i"
           :image="slide.image"
         >
@@ -44,7 +57,7 @@
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css';
-import VueScreenSize from 'vue-screen-size'
+import VueScreenSize from 'vue-screen-size';
 
 export default {
   name: 'events',
@@ -53,6 +66,7 @@ export default {
   data() {
     return {
       toggle: false,
+      wp_toggle: false,
       desktop_slides: [
         {
           title: 'A Nightmare on Discord Street',
