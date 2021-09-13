@@ -195,6 +195,7 @@ export default new Vuex.Store({
         path: 'hotpot-tote',
         dbName: 'tote',
       },
+      /*
       {
         id: 10,
         name: 'MCSS Membership Card',
@@ -214,6 +215,7 @@ export default new Vuex.Store({
         path: 'membership-card',
         dbName: 'membership-card',
       },
+      */
     ],
 
     StoreCart: [],
