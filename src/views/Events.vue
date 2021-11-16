@@ -4,18 +4,18 @@
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631305841/MCSS/mcss_fall_2021_zli4cc.jpg"
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png"
         :class="{toggled: toggle}"
         alt="MCSS x DFAD"
         style="border-radius: 7px;"
       />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/551520242720121" target="_blank">
+      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/424687442362881" target="_blank">
         <div class="middle">
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
       </a>
     </div>
-    <div class="event-container event2 upcoming" v-on:click="wp_toggle = !wp_toggle">
+    <!-- <div class="event-container event2 upcoming" v-on:click="wp_toggle = !wp_toggle">
       <b-img-lazy
         src="https://res.cloudinary.com/die52atcc/image/upload/v1631306021/MCSS/welcome_party_gzvcrr.png"
         :class="{toggled: wp_toggle}"
@@ -27,7 +27,7 @@
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
       </a>
-    </div>
+    </div> -->
     <hr class="hr2">
     <h1>PAST <span>EVENTS</span></h1>
     <hr class="hr1">
@@ -68,6 +68,11 @@ export default {
       toggle: false,
       wp_toggle: false,
       desktop_slides: [
+        {
+          title: 'MCSS: Nightmare on Discord Street',
+          content: "First Picture",
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631306021/MCSS/welcome_party_gzvcrr.png',
+        },
         {
           title: 'A Nightmare on Discord Street',
           content: 'First Picture',

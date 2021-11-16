@@ -17,7 +17,7 @@
             <div class="back face center">
               <div class="intro-img mcss-card">
                 <b-img-lazy
-                  src="https://res.cloudinary.com/die52atcc/image/upload/v1631508110/MCSS/interclub_xvnwft.jpg"
+                  src="https://res.cloudinary.com/die52atcc/image/upload/v1631512039/MCSS/sponsors_lwzcg8.jpg"
                   alt="Sponsorship Card"
                   width=302
                   height=191

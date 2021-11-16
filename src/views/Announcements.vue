@@ -1,31 +1,25 @@
 <template>
   <div class="events">
-    <h1>MCSS <span>FALL RECRUITMENT</span></h1>
+    <h1>FALL 2021 <br><span>NEW RECRUITS</span></h1>
+    <hr class="hr1">
+    <div class="event2">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1637031371/MCSS/mcss_2021_fvv397.jpg"
+        alt="New Recruit Fall 2021"
+        style="border-radius: 7px;"
+      />
+    </div>
+    <hr class="hr2">
+    <h1>MCSS PRESENTS <span>CASINO NIGHT</span></h1>
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631305841/MCSS/mcss_fall_2021_zli4cc.jpg"
+        src="https://res.cloudinary.com/die52atcc/image/upload/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png"
         :class="{toggled: toggle}"
-        alt="MCSS x DFAD"
+        alt="MCSS CASINO NIGHT"
         style="border-radius: 7px;"
       />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/551520242720121" target="_blank">
-        <div class="middle">
-          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
-        </div>
-      </a>
-    </div>
-    <hr class="hr2">
-    <h1>MCSS <span>WELCOME PARTY</span></h1>
-    <hr class="hr1">
-    <div class="event-container event2 upcoming" v-on:click="wp_toggle = !wp_toggle">
-      <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631306715/MCSS/welcome_party_ig_a2tsw5.jpg"
-        :class="{toggled: wp_toggle}"
-        alt="MCSS x DFAD"
-        style="border-radius: 7px;"
-      />
-      <a class="event-redirect" v-if="wp_toggle" href="https://www.facebook.com/events/828728397816392" target="_blank">
+      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/424687442362881" target="_blank">
         <div class="middle">
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
@@ -46,16 +40,6 @@
           <h2 style="font-family: IKEABold;" class="check-it-out" >SOLD OUT</h2>
         </div>
       </a>
-    </div>
-    <hr class="hr2">
-    <h1>FALL 2020 <br><span>NEW RECRUITS</span></h1>
-    <hr class="hr1">
-    <div class="event2">
-      <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139984/MCSS/Announcements/Welcome_Post_2020_Fall_s9g8ct.png"
-        alt="New Recruit Fall 2020"
-        style="border-radius: 7px;"
-      />
     </div>
     <hr class="hr2">
     <!-- SLIDES

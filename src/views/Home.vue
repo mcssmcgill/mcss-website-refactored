@@ -19,7 +19,7 @@ export default {
   name: 'home',
   methods: {
     gotoMain() {
-      this.$router.push('/fantuan');
+      this.$router.push('/announcements');
     },
   },
 };

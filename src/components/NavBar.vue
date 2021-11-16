@@ -22,13 +22,6 @@
           <b-navbar-nav class="ml-auto navbar-links">
             <b-nav-item
               class="nav-element link-with-border"
-              @click="gotoFantuan"
-              v-bind:class="{ active: routeName == '/fantuan'}"
-            >
-              Fantuan
-            </b-nav-item>
-            <b-nav-item
-              class="nav-element link-with-border"
               @click="gotoAnnouncements"
               v-bind:class="{ active: routeName == '/announcements'}"
             >
@@ -54,7 +47,13 @@
             >
               Sponsors
             </b-nav-item>
-
+            <b-nav-item
+              class="nav-element link-with-border"
+              @click="gotoFantuan"
+              v-bind:class="{ active: routeName == '/fantuan'}"
+            >
+              Fantuan
+            </b-nav-item>
             <b-nav-item
               class="nav-element link-with-border"
               @click="gotoContact"
