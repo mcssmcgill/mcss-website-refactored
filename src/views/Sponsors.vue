@@ -7,7 +7,7 @@
             <div class="front face">
               <div class="intro-img mcss-card">
                 <b-img-lazy
-                  src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/card-front_wu8sys.png"
+                  src="https://res.cloudinary.com/die52atcc/image/upload/v1631508110/MCSS/interclub_xvnwft.jpg"
                   alt="Sponsorship Card"
                   width=302
                   height=191
@@ -17,7 +17,7 @@
             <div class="back face center">
               <div class="intro-img mcss-card">
                 <b-img-lazy
-                  src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/card-back_eakkue.png"
+                  src="https://res.cloudinary.com/die52atcc/image/upload/v1631512039/MCSS/sponsors_lwzcg8.jpg"
                   alt="Sponsorship Card"
                   width=302
                   height=191
@@ -28,13 +28,17 @@
         </div>
       </div>
       <div class="intro-text centered">
-        <h1>MCSS <span>2020-2021</span> MEMBERSHIP CARD</h1>
+        <h1>MCSS <span>2021-2022</span> MEMBERSHIP CARD</h1>
         <hr class="hr1">
         <p>
-          With our MCSS Membership card, students can get numerous discounts
+          For the first time ever, MTSA, HKSN, MCSS, MECA and MANABA have partnered
+          together to bring you our first joint Membership Card!
+          <br /><br />
+          With our membership card, students can get numerous discounts
           at various restaurants and stores across the city.
           We take pride in bringing our members the best deals and benefits with
           our annually updated list of participating sponsors.
+          <br /><br />
           <button
             class="scroller-btn"
             v-on:click="scrollDown()"
@@ -42,38 +46,36 @@
             Click here to check out our sponsors map.
           </button>
           <br /><br />
-          Get yours today for only <b>$5</b> in our shop page!
+          Get yours today for only <b>$5</b> by visiting our
+          <a
+            style="all: unset; cursor: pointer; font-weight: 800"
+            href="https://www.facebook.com/events/1195542960939553"
+            target="_blank"
+          >
+            Facebook page here.
+          </a>
         </p>
       </div>
     </div>
     <hr class="hr2">
     <h1>OUR <span>SPONSORS</span></h1>
     <hr class="hr3">
+    <div class="event2">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/v1631512039/MCSS/sponsors_lwzcg8.jpg"
+        alt="New Recruit Fall 2020"
+        style="border-radius: 7px;"
+      />
+    </div>
     <br />
-    <div class="sponsors">
-      <div class="restOfSponsors">
-        <b-row>
-          <b-col sm="12" md="4" class="avatar" v-for="sponsor in sponsorsList" :key="sponsor.name">
-            <b-img-lazy
-              :src="sponsor.image"
-              blank-src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/food-placeholder_st8uoq.jpg"
-              offset="700"
-              v-bind:alt="sponsor.name"
-            />
-            <p class="name">{{ sponsor.name }}</p>
-            <p class="role">{{ sponsor.address }}</p>
-            <br /><br />
-          </b-col>
-        </b-row>
-      </div>
-      <hr class="hr2">
-      <div class="sponsor-map">
+    <hr class="hr2">
+    <div class="sponsor-map">
       <h1>SPONSORS <span>MAP</span></h1>
         <div style="width: 100%; overflow: hidden; height: 600px;">
           <iframe
-            style="width: 80%;
-            margin-top: -46px;"
-            src="https://www.google.com/maps/d/embed?mid=1MCocHjxAGO78uFDjn0fm486kqSkhqhs6"
+            style="width: 90%;
+            margin-top: -54px;"
+            src="https://www.google.com/maps/d/embed?mid=1lAoKkeoie9xlYalfXvB_3fgfcE8gkeL6"
             width="640"
             height="480"
           >
@@ -82,11 +84,10 @@
         <hr id="anchor" class="hr2">
       </div>
     </div>
-
-  </div>
 </template>
 
 <script>
+
 export default {
   name: 'sponsors',
   methods: {
@@ -97,6 +98,7 @@ export default {
   },
   data() {
     return {
+      source1: 'https://github.com/mcssmcgill/mcss-matching-algorithm/raw/master/McGill%20East%20Asian%20Clubs%20-%20Sponsor%20List%20(1).pdf',
       sponsorsList: [
         {
           name: 'Opiano',
@@ -324,6 +326,18 @@ export default {
     margin-bottom: 1vw;
     border-style: solid;
     border-color: black;
+  }
+
+  .event2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .event2 img{
+    border-radius: 7px;
+    margin-top: 20px;
+    width: 100%;
   }
 
   b {

@@ -64,7 +64,7 @@
             v-model="selectedSize"
             name="Radios" type="radio"
             :value="size"
-            :disabled="inventory[size] <= 0"
+            :disabled="isFetching || inventory[size] <= 0"
           >
           <label :for="size">{{ size }}</label>
         </span>
@@ -139,6 +139,7 @@ export default {
       isReturnModalVisible: false,
       isImageZoom: false,
       imageURL: '',
+      isFetching: true,
     };
   },
   methods: {
@@ -189,9 +190,10 @@ export default {
       this.$router.push('/404');
     }
     axios
-      .get(`https://mcss-website-backend.herokuapp.com/inventory/${this.product.dbName}`)
+      .get(`https://mcss-website-backend.uk.r.appspot.com/inventory/${this.product.dbName}`)
       .then((response) => {
         this.inventory = response.data;
+        this.isFetching = false;
       })
       .catch(error => console.log(error));
   },

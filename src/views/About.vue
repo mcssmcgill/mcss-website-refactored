@@ -56,7 +56,7 @@
       </div>
       <div class="intro-img">
         <b-img-lazy
-          src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139816/MCSS/About/group-pic_jfk8ol.jpg"
+          src="https://res.cloudinary.com/die52atcc/image/upload/v1640042145/MCSS/Members22/mcssfam_lxfjlj.jpg"
           alt="Group Picture!"
           width=466
           height=300
@@ -74,16 +74,16 @@
 
       <div class="president">
         <b-row>
-          <b-col sm="12" md="6" class="avatar" v-on:click="toggleAmy()">
+          <b-col sm="12" md="6" class="avatar" v-on:click="togglePres1()">
             <transition name="flip">
-              <div class="card-container-pres" v-if="amyflipped">
+              <div class="card-container-pres" v-if="pres1flipped">
                 <div class="member-desc">
                   <p><strong>Hometown:</strong> Ottawa, ON</p>
-                  <p><strong>Major:</strong> U2, Neuroscience</p>
+                  <p><strong>Major:</strong> U3 Neuroscience</p>
                 </div>
               </div>
               <b-img-lazy
-                src="https://res.cloudinary.com/die52atcc/image/upload/v1605479871/MCSS/Members21/DSC03237-2_yut4up.jpg"
+                src="https://res.cloudinary.com/die52atcc/image/upload/v1640031672/MCSS/Members22/DSC_0274-Edit_alyz6v.jpg"
                 blank-src="https://res.cloudinary.com/die52atcc/image/upload/v1603139815/MCSS/About/placeholder_wox9nt.png"
                 alt="Co-President"
               />
@@ -92,68 +92,26 @@
             <p class="role">Co-President</p>
             <br /><br />
           </b-col>
-          <b-col sm="12" md="6" class="avatar" v-on:click="toggleAnnie()">
+          <b-col sm="12" md="6" class="avatar" v-on:click="togglePres2()">
             <transition name="flip">
-              <div class="card-container-pres" v-if="annieflipped">
+              <div class="card-container-pres" v-if="pres2flipped">
                 <div class="member-desc">
-                  <p><strong>Hometown:</strong> Vancouver, BC</p>
-                  <p><strong>Major:</strong> U3 Physiology</p>
+                  <p><strong>Hometown:</strong> Bangkok, Thailand</p>
+                  <p><strong>Major:</strong> U3 Materials Engineering</p>
                 </div>
               </div>
               <b-img-lazy
-                src="https://res.cloudinary.com/die52atcc/image/upload/v1605479871/MCSS/Members21/DSC03055-2_P_-3_o5qcat.jpg"
+                src="https://res.cloudinary.com/die52atcc/image/upload/v1640031746/MCSS/Members22/DSC_0284-Edit_hmwd9i.jpg"
                 blank-src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/placeholder_wox9nt.png"
                 alt="Co-President"
               />
             </transition>
-            <p class="name">Annie Sun</p>
+            <p class="name">Karist Ng</p>
             <p class="role">Co-President</p>
           </b-col>
         </b-row>
       </div>
       <br /><br />
-
-      <div class="president">
-        <b-row>
-          <b-col sm="12" md="6" class="avatar" v-on:click="toggleOwen()">
-            <transition name="flip">
-              <div class="card-container-pres" v-if="owenflipped">
-                <div class="member-desc">
-                  <p><strong>Hometown:</strong> Beijing, CN</p>
-                  <p><strong>Major:</strong> U3 CS and East Asian Literature</p>
-                </div>
-              </div>
-              <b-img-lazy
-                src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139844/MCSS/Members/owen_kyhydw.jpg"
-                blank-src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/placeholder_wox9nt.png"
-                alt="Senior Advisor"
-              />
-            </transition>
-            <p class="name">Owen Bai</p>
-            <p class="role">Senior Advisor</p>
-            <br /><br />
-          </b-col>
-          <b-col sm="12" md="6" class="avatar" v-on:click="toggleEmily()">
-            <transition name="flip">
-              <div class="card-container-pres" v-if="emilyflipped">
-                <div class="member-desc">
-                  <p><strong>Hometown:</strong> Vancouver, BC</p>
-                  <p><strong>Major:</strong> M1 Physiotherapy</p>
-                </div>
-              </div>
-              <b-img-lazy
-                src="https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/DSC_0212_lyqvm6.jpg"
-                blank-src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139815/MCSS/About/placeholder_wox9nt.png"
-                alt="Senior Advisor"
-              />
-            </transition>
-            <p class="name">Emily Zhang</p>
-            <p class="role">Senior Advisor</p>
-          </b-col>
-        </b-row>
-      </div>
-      <br /><br />
-
       <div class="restOfBoard">
         <b-row>
           <b-col sm="12" md="4" class="avatar"
@@ -195,285 +153,295 @@ export default {
       // eslint-disable-next-line no-param-reassign
       member.flipped = !member.flipped;
     },
-    toggleOwen() {
-      this.owenflipped = !this.owenflipped;
+    togglePres1() {
+      this.pres1flipped = !this.pres1flipped;
     },
-    toggleAmy() {
-      this.amyflipped = !this.amyflipped;
-    },
-    toggleEmily() {
-      this.emilyflipped = !this.emilyflipped;
-    },
-    toggleAnnie() {
-      this.annieflipped = !this.annieflipped;
+    togglePres2() {
+      this.pres2flipped = !this.pres2flipped;
     },
   },
   data() {
     return {
-      annieflipped: false,
-      amyflipped: false,
-      owenflipped: false,
-      emilyflipped: false,
+      pres1flipped: false,
+      pres2flipped: false,
       boardMembers: [
         {
-          name: 'Danielle Zhu',
-          id: 'danielle',
+          name: 'Melody Zhou',
+          id: 'melody',
           role: 'VP Internal',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/DSC02629_v20ook.jpg',
-          hometown: 'Montreal QC',
-          major: 'U3 Marketing',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640032157/MCSS/Members22/Copy_of_DSC_0356-Edit_jkbgo3.jpg',
+          hometown: 'Boston, MA',
+          major: 'U4 Cognitive Science',
+          flipped: false,
+        },
+        {
+          name: 'Yuecheng Huang',
+          id: 'yuecheng',
+          role: 'VP External',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640032363/MCSS/Members22/DSCF2855-Edit_c9xjma.jpg',
+          hometown: 'Ottawa, ON',
+          major: 'U3 Philosophy/International Development',
+          flipped: false,
+        },
+        {
+          name: 'Jeremy Leung',
+          id: 'jeremy',
+          role: 'VP Internal',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640032271/MCSS/Members22/DSC_0420-Edit_a51wdo.jpg',
+          hometown: 'Toronto, ON',
+          major: 'U3 Microbiology & Immunology',
           flipped: false,
         },
         {
           name: 'Jian Qiao He',
           id: 'mike',
-          role: 'VP External',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479872/MCSS/Members21/DSC03474_P_lajam9.jpg',
-          hometown: 'Montreal QC',
+          role: 'Senior Advisor',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640034481/MCSS/Members22/DSCF3185-Edit_wph3os.jpg',
+          hometown: 'Jilin City, China',
           major: 'U3 Marketing',
-          flipped: false,
-        },
-        {
-          name: 'Gloria Ma',
-          id: 'gloria',
-          role: 'VP Internal',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/DSC02657-3_iflwjs.jpg',
-          hometown: 'Hillsborough, NJ',
-          major: 'U3 Honours in Immunology and Biochemistry',
-          flipped: false,
-        },
-        {
-          name: 'Melody Zhou',
-          id: 'melody',
-          role: 'Junior VP Finance',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479869/MCSS/Members21/DSC_0129_sicpxv.jpg',
-          hometown: 'Boston, MA',
-          major: 'U3 Cognitive Science',
           flipped: false,
         },
         {
           name: 'Xi Ran Chen',
           id: 'xiran',
           role: 'VP Finance',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479874/MCSS/Members21/XR_2_itdt7h.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U2 Joint Economics & Accounting',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640034596/MCSS/Members22/DSCF3039-Edit_awz5lw.jpg',
+          hometown: 'Shandong, China',
+          major: 'U3 Joint Economics & Accounting',
           flipped: false,
         },
         {
-          name: 'YoungRock Han',
-          id: 'youngrock',
-          role: 'Social Director',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479872/MCSS/Members21/DSC03274_joq2ph.jpg',
-          hometown: 'Winnipeg, MB',
-          major: 'U2 Nursing',
+          name: 'Jennifer Chen',
+          id: 'jennifer',
+          role: 'Junior VP Finance',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640034707/MCSS/Members22/DSCF3020_1_-Edit_pjjn5p.jpg',
+          hometown: 'Toronto, ON',
+          major: 'U2 Computer Science',
           flipped: false,
         },
         {
           name: 'Julian Qu',
           id: 'julian',
           role: 'Sponsorship Director',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605481437/MCSS/Members21/DSC03374_P_f5n1gy.jpg',
-          hometown: 'Vancouver, BC',
-          major: 'U2 Engineering',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640034817/MCSS/Members22/DSCF2873-Edit_xdzmt5.jpg',
+          hometown: 'Richmond, BC',
+          major: 'U3 Civil Engineering',
           flipped: false,
         },
         {
-          name: 'Yuecheng Huang',
-          id: 'yuecheng',
+          name: 'Kimberly Yang',
+          id: 'kimberley',
           role: 'Sponsorship Director',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479871/MCSS/Members21/DSC03155_P_z6chqr.jpg',
-          hometown: 'Ottawa, ON',
-          major: 'U2 Philosophy and International Development Studies',
-          flipped: false,
-        },
-        {
-          name: 'Jessica Yip',
-          id: 'jessica',
-          role: 'Sponsorship Director',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479871/MCSS/Members21/DSC02995-2_za3hkl.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U3 Accounting',
-          flipped: false,
-        },
-        {
-          name: 'Jia Liu',
-          id: 'jia',
-          role: 'Sponsorship Director',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479868/MCSS/Members21/DSC_0040_vbjhqb.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U2 Microbiology & Immunology',
-          flipped: false,
-        },
-        {
-          name: 'Karist Ng',
-          id: 'karist',
-          role: 'Project Manager',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479869/MCSS/Members21/DSC_0178_vupr70.jpg',
-          hometown: 'Bangkok, Thailand',
-          major: 'U2 Materials Engineering',
-          flipped: false,
-        },
-        {
-          name: 'Jeremy Leung',
-          id: 'jeremy',
-          role: 'Project Manager',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479873/MCSS/Members21/Jeremy_1_rkuuis.jpg',
-          hometown: 'Toronto, ON',
-          major: 'U2.5 Microbiology & Immunology',
-          flipped: false,
-        },
-        {
-          name: 'Aiyu Wang',
-          id: 'aiyu',
-          role: 'Project Manager',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/DSC_0026_pxepwr.jpg',
-          hometown: 'Montreal',
-          major: 'U3 Computer Science',
-          flipped: false,
-        },
-        {
-          name: 'Huub de Jong',
-          id: 'huub',
-          role: 'Project Manager',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605481532/MCSS/Members21/DSC02858_uf0xsu.jpg',
-          hometown: 'Haarlem, the Netherlands',
-          major: 'U3 Software Eng & East Asian Studies',
-          flipped: false,
-        },
-        {
-          name: 'Sherry Chen',
-          id: 'sherry',
-          role: 'Project Manager',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479874/MCSS/Members21/Sherry_1_ti1egt.jpg',
-          hometown: 'Chengdu, China',
-          major: 'U2 Joint Political Science & Psychology',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036376/MCSS/Members22/DSCF2880-Edit_vnrcfz.jpg',
+          hometown: 'Thornhill, ON',
+          major: 'U0 Undeclared',
           flipped: false,
         },
         {
           name: 'Chris Gao',
           id: 'chris',
-          role: 'VP Marketing & Communications',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/Chris_1_uynsah.jpg',
+          role: 'Sponsorship Director',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036063/MCSS/Members22/DSCF2842-Edit_ujx89r.jpg',
           hometown: 'Markham, ON',
-          major: 'U2 Psychology',
+          major: 'U3 Psychology',
+          flipped: false,
+        },
+        {
+          name: 'Hoang Kevin Say',
+          id: 'kevin',
+          role: 'Project Manager',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036477/MCSS/Members22/Copy_of_DSC_0565-Edit_o50gfu.jpg',
+          hometown: 'Montréal, QC',
+          major: 'U2 Accounting',
+          flipped: false,
+        },
+        {
+          name: 'Jessica Yip',
+          id: 'jessica',
+          role: 'Project Manager',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036557/MCSS/Members22/DSC_0669-Edit_hw6lwx.jpg',
+          hometown: 'Montréal, QC',
+          major: 'U4 Accounting',
+          flipped: false,
+        },
+        {
+          name: 'Michelle Lee',
+          id: 'michelle',
+          role: 'Project Manager',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036652/MCSS/Members22/DSC_0551-Edit_hns0w4.jpg',
+          hometown: 'Montréal, QC',
+          major: 'U2 Computer Engineering',
+          flipped: false,
+        },
+        {
+          name: 'Melina Chen',
+          id: 'melina',
+          role: 'Project Manager',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036710/MCSS/Members22/DSC_0633-Edit_zntp3i.jpg',
+          hometown: 'Boston, MA',
+          major: 'U2 Biochemistry',
+          flipped: false,
+        },
+        {
+          name: 'Charlene Yin',
+          id: 'charlene',
+          role: 'Junior Project Manager',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036816/MCSS/Members22/DSC_0601-Edit_huidcq.jpg',
+          hometown: 'Vancouver, BC',
+          major: 'U1 Cognitive Science',
           flipped: false,
         },
         {
           name: 'Nancy Xiang',
           id: 'nancy',
           role: 'VP Academics',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479867/MCSS/Members21/DSC_0023_exae40.jpg',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041067/MCSS/Members22/DSCF2755-Edit_jn2foy.jpg',
           hometown: 'Oakville, ON',
-          major: 'U2 Psychology',
+          major: 'U3 Psychology',
           flipped: false,
         },
         {
-          name: 'Dimitri Yang',
-          id: 'dimitri',
+          name: 'Anita Zheng',
+          id: 'anita',
+          role: 'Social Director',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640036988/MCSS/Members22/DSCF2917-Edit_ciri9f.jpg',
+          hometown: 'Whitby, ON',
+          major: 'U1 Computer Science',
+          flipped: false,
+        },
+        {
+          name: 'Jia Liu',
+          id: 'jia',
+          role: 'Social Director',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640037083/MCSS/Members22/DSCF2927-Edit_wgmi9b.jpg',
+          hometown: 'Montréal, QC',
+          major: 'U3 Microbiology & Immunology',
+          flipped: false,
+        },
+        {
+          name: 'Yuheng Liu',
+          id: 'yuheng',
+          role: 'VP Communications & Marketing',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640037384/MCSS/Members22/DSCF3142-Edit_z9fkbq.jpg',
+          hometown: 'Windsor, ON',
+          major: 'U1 Bioengineering',
+          flipped: false,
+        },
+        {
+          name: 'Young Rock Han',
+          id: 'youngrock',
           role: 'VP Marketing',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479866/MCSS/Members21/DSC_0006_zd0ib2.jpg',
-          hometown: 'Vancouver, BC',
-          major: 'U1 Neuroscience',
-          flipped: false,
-        },
-        {
-          name: 'Vicky Dong',
-          id: 'vicky',
-          role: 'Junior VP Media',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605481627/MCSS/Members21/DSC02905_P_-2_yfid7y.jpg',
-          hometown: 'Calgary, AB',
-          major: 'U3 Physiology/CS',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640037448/MCSS/Members22/DSCF3069-Edit_pcww66.jpg',
+          hometown: 'Winnipeg, MB & Seoul, Korea',
+          major: 'U3 Nursing',
           flipped: false,
         },
         {
           name: 'Ivy Chen',
           id: 'ivy',
           role: 'VP Media',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479871/MCSS/Members21/DSC02675_adlmjs.jpg',
-          hometown: 'Toronto, ON',
-          major: 'U1 Nursing',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040876/MCSS/Members22/DSCF2697-Edit_c9mziq.jpg',
+          hometown: 'Newmarket, ON',
+          major: 'U2 Nursing',
           flipped: false,
         },
         {
-          name: 'Andy Wang',
-          id: 'andy',
-          role: 'Videographer',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1605478613/MCSS/Members21/Andy_2_ksl0hc.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U2 Bioengineering',
+          name: 'Dorothy Ma',
+          id: 'dorothy',
+          role: 'Junior VP Media',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040923/MCSS/Members22/DSCF2683-Edit_mhovlo.jpg',
+          hometown: 'Vancouver Mountains',
+          major: 'U1 Bioengineering',
           flipped: false,
         },
         {
           name: 'Dian Dian Dai',
           id: 'dian',
           role: 'Photographer',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479870/MCSS/Members21/DSC_0097_fbn9vc.jpg',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040458/MCSS/Members22/DSC03859-Edit_dzovcg.jpg',
           hometown: 'Toronto, ON',
-          major: 'U2 Computer Science',
+          major: 'U3 Computer Science',
           flipped: false,
         },
         {
-          name: 'Hattie Chen',
-          id: 'hattie',
+          name: 'Dimitri Yang',
+          id: 'dimitri',
           role: 'Photographer',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479872/MCSS/Members21/DSC03410-3_v7l6lk.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U3 Physical Therapy',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040525/MCSS/Members22/DSCF2963-Edit_fd1q1t.jpg',
+          hometown: 'Vancouver, BC',
+          major: 'U3 Neuroscience',
+          flipped: false,
+        },
+        {
+          name: 'Owen Bai',
+          id: 'owen',
+          role: 'Photographer',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040647/MCSS/Members22/DSCF3094-Edit-2_kxiq73.jpg',
+          hometown: 'Beijing, China',
+          major: 'U4 Computer Science & East Asian Studies',
+          flipped: false,
+        },
+        {
+          name: 'Andy Wang',
+          id: 'andy',
+          role: 'Videographer',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640040749/MCSS/Members22/DSCF3207-Edit_isezev.jpg',
+          hometown: 'ShenZhen, China',
+          major: 'U3 Bioengineering',
           flipped: false,
         },
         {
           name: 'Xin Rui Li',
           id: 'xinrui',
           role: 'Webmaster',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479873/MCSS/Members21/Xinrui_1_yzvgz5.jpg',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041361/MCSS/Members22/DSCF2676_l2nih3.jpg',
           hometown: 'Montreal, QC',
-          major: 'U3 Computer Science',
+          major: 'U4 Computer Science',
           flipped: false,
         },
         {
-          name: 'Kevin Say',
-          id: 'kevin',
+          name: 'Emily Xin Yuan Zhang',
+          id: 'emily',
           role: 'First Year Rep',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479872/MCSS/Members21/Kevin_2_ejtmix.jpg',
-          hometown: 'Montreal, QC',
-          major: 'U1 Accounting',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041489/MCSS/Members22/emily_mgdzud.jpg',
+          hometown: 'NanNing, China',
+          major: 'U1 Sociology',
           flipped: false,
         },
         {
-          name: 'Jennifer Chen',
-          id: 'jennifer',
+          name: 'Shirley Wen',
+          id: 'shirley',
           role: 'First Year Rep',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605481704/MCSS/Members21/DSC02733_ikd66k.jpg',
-          hometown: 'Richmond Hill',
-          major: 'U1 Computer Science',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041577/MCSS/Members22/DSC_0009-Edit_lwagxv.jpg',
+          hometown: 'Montréal, QC ',
+          major: 'U1 Physical Education',
           flipped: false,
         },
         {
-          name: 'Yuheng Liu',
-          id: 'yuheng',
+          name: 'Emma Liu',
+          id: 'emma',
           role: 'First Year Rep',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479867/MCSS/Members21/DSC_0056_mbvzwt.jpg',
-          hometown: 'Foshan, China',
-          major: 'U0 Engineering',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041675/MCSS/Members22/DSC_0148-Edit_nnc0ch.jpg',
+          hometown: 'Markham, ON',
+          major: 'U0 Undeclared Faculty of Management',
           flipped: false,
         },
         {
-          name: 'Wan Er Jin',
-          id: 'waner',
+          name: 'Amy Zhu',
+          id: 'amy_z',
           role: 'First Year Rep',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479868/MCSS/Members21/DSC_0094_eyuh1g.jpg',
-          hometown: 'Wuhan, CN',
-          major: 'U1 Microbiology & Immunology',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041824/MCSS/Members22/DSC_0027-Edit_kysycs.jpg',
+          hometown: 'Windsor, ON',
+          major: 'U0 Kinesiology',
           flipped: false,
         },
         {
-          name: 'Anita Zheng',
-          id: 'anita',
+          name: 'Amy Huang',
+          id: 'amy_h',
           role: 'First Year Rep',
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1605479867/MCSS/Members21/DSC_0021_gpjt5o.jpg',
-          hometown: 'Whitby, ON',
-          major: 'U0 Computer Science & Biology',
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/v1640041914/MCSS/Members22/DSC_0214-Edit_zhfis6.jpg',
+          hometown: 'Around Boston',
+          major: 'U1 CS & Stats',
           flipped: false,
         },
       ],

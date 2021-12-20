@@ -14,6 +14,11 @@ export default new Router({
       component: Home,
     },
     {
+      path: '/fantuan',
+      name: 'fantuan',
+      component: () => import(/* webpackChunkName: "main" */ './views/Fantuan.vue'),
+    },
+    {
       path: '/success',
       name: 'success',
       component: () => import(/* webpackChunkName: "main" */ './views/Success.vue'),

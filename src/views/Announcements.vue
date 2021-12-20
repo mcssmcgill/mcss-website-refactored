@@ -1,87 +1,48 @@
 <template>
   <div class="events">
+    <h1>FALL 2021 <br><span>NEW RECRUITS</span></h1>
+    <hr class="hr1">
+    <div class="event2">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1637031371/MCSS/mcss_2021_fvv397.jpg"
+        alt="New Recruit Fall 2021"
+        style="border-radius: 7px;"
+      />
+    </div>
+    <hr class="hr2">
+    <h1>MCSS PRESENTS <span>CASINO NIGHT</span></h1>
+    <hr class="hr1">
+    <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png"
+        :class="{toggled: toggle}"
+        alt="MCSS CASINO NIGHT"
+        style="border-radius: 7px;"
+      />
+      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/424687442362881" target="_blank">
+        <div class="middle">
+          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
+        </div>
+      </a>
+    </div>
+    <hr class="hr2">
     <h1>OUR MCSS <span>MERCH IS HERE!</span></h1>
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
         src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1605722567/MCSS/Merch/first-drop/tshirt_banner_wkccbu.jpg"
-        :class="{toggled: toggle}"
+        class="toggled"
         alt="MCSS Merch"
         style="border-radius: 7px; border: 1px solid black"
       />
-      <a class="event-redirect" v-if="toggle" href="/shop">
+      <a class="event-redirect" href="/shop">
         <div class="middle">
-          <h2 style="font-family: IKEABold;" class="check-it-out">SHOP NOW</h2>
+          <h2 style="font-family: IKEABold;" class="check-it-out" >SOLD OUT</h2>
         </div>
       </a>
     </div>
     <hr class="hr2">
-    <h1>OUR MEMBERSHIP CARD <span>IS HERE!</span></h1>
-    <hr class="hr1">
-    <div class="intro-container-2">
-      <div class="intro-img">
-        <b-img-lazy
-          src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139752/MCSS/card2020_ap1nc4.png"
-          alt="Group Picture!"
-          width=542
-          height=330
-          style="border-radius: 7px;"
-          class="group-pic"
-        />
-      </div>
-      <div class="centered">
-        <p class="card-text">
-          With our MCSS Membership card, students can get numerous discounts
-          at various restaurants and stores across the city.
-          Get yours today for only <b>$5</b> in our shop.
-          <br /><br />
-          After your purchase, you should receive an email containing the activation code.
-          Make sure to check your spam folder if it doesn't arrive in your inbox.
-          <br /><br />
-          Once you have your activation code, please follow our tutorial
-          to activate your membership card:
-        </p>
-        <div class="buttons">
-          <button
-            class="card-btn"
-            @click="redirectToCard()"
-          >
-            PURCHASE
-          </button>
-          <a
-            href="https://s3.ca-central-1.amazonaws.com/mcss.ca/Instruction-Manual.pdf"
-            class="tutorial-btn"
-            target="_blank"
-          >
-            GO TO TUTORIAL
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr class="hr2">
-
-    <h1>FALL 2020 <br><span>NEW RECRUITS</span></h1>
-    <hr class="hr1">
-    <div class="event2">
-      <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139984/MCSS/Announcements/Welcome_Post_2020_Fall_s9g8ct.png"
-        alt="New Recruit Fall 2020"
-        style="border-radius: 7px;"
-      />
-    </div>
-
-    <hr class="hr2">
-    <h1>WINTER 2020 <br><span>NEW RECRUITS</span></h1>
-    <hr class="hr1">
-    <div class="event2">
-      <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603139984/MCSS/Announcements/New_Recruits_Winter_2020_kmacju.png"
-        alt="New Recruit Winter 2020"
-        style="border-radius: 7px;"
-      />
-    </div>
-
-    <hr class="hr2">
+    <!-- SLIDES
     <div id="sogaeting"><h1>SOGAETING <br><span> FEB 14 2020</span></h1></div>
     <hr class="hr1">
     <div class="slideshow-container">
@@ -98,19 +59,17 @@
       </vueper-slides>
     </div>
     <hr class="hr2">
+    -->
   </div>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides';
-import 'vueperslides/dist/vueperslides.css';
-
 export default {
   name: 'announcements',
-  components: { VueperSlides, VueperSlide },
   data() {
     return {
       toggle: false,
+      wp_toggle: false,
       slides: [
         {
           title: 'Sogaeting 1',
@@ -220,7 +179,7 @@ export default {
   }
 
   .toggled {
-    opacity: 0.4;
+    opacity: 0.6;
     transition: all 0.15s;
   }
 

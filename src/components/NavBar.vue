@@ -47,7 +47,13 @@
             >
               Sponsors
             </b-nav-item>
-
+            <b-nav-item
+              class="nav-element link-with-border"
+              @click="gotoFantuan"
+              v-bind:class="{ active: routeName == '/fantuan'}"
+            >
+              Fantuan
+            </b-nav-item>
             <b-nav-item
               class="nav-element link-with-border"
               @click="gotoContact"
@@ -94,6 +100,11 @@ export default {
     },
     gotoHome() {
       this.$router.push('/');
+    },
+    gotoFantuan() {
+      if (this.$route.path !== '/fantuan') {
+        this.$router.push('/fantuan');
+      }
     },
     gotoAnnouncements() {
       if (this.$route.path !== '/announcements') {
