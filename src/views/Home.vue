@@ -61,7 +61,7 @@ export default {
       rgba(190, 8, 51, 0.4),
       rgba(190, 8, 25, 0.4)
     ),
-    url('https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1605568825/MCSS/home_nz51x9.jpg');
+    url('https://res.cloudinary.com/die52atcc/image/upload/v1640033479/MCSS/Members22/DSCF3343_qgag1l.jpg');
   }
   .home-intro-title {
       font-size: 5rem;

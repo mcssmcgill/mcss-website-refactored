@@ -73,7 +73,7 @@
       <h1>SPONSORS <span>MAP</span></h1>
         <div style="width: 100%; overflow: hidden; height: 600px;">
           <iframe
-            style="width: 80%;
+            style="width: 90%;
             margin-top: -54px;"
             src="https://www.google.com/maps/d/embed?mid=1lAoKkeoie9xlYalfXvB_3fgfcE8gkeL6"
             width="640"

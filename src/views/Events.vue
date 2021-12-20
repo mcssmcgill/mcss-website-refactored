@@ -70,7 +70,7 @@ export default {
       desktop_slides: [
         {
           title: 'MCSS: Nightmare on Discord Street',
-          content: "First Picture",
+          content: 'First Picture',
           image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1631306021/MCSS/welcome_party_gzvcrr.png',
         },
         {
