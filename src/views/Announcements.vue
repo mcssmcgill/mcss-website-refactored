@@ -1,5 +1,21 @@
 <template>
   <div class="events">
+    <h1>MCGILL INFERNO: <span>LOST IN PARADISE</span></h1>
+    <hr class="hr1">
+    <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
+      <b-img-lazy
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1644191070/MCSS/Events/inferno_dlqken.png"
+        :class="{toggled: toggle}"
+        alt="MCSS CASINO NIGHT"
+        style="border-radius: 7px;"
+      />
+      <a class="event-redirect" v-if="toggle" href="https://fb.me/e/18rekgzyF" target="_blank">
+        <div class="middle">
+          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
+        </div>
+      </a>
+    </div>
+    <hr class="hr2">
     <h1>FALL 2021 <br><span>NEW RECRUITS</span></h1>
     <hr class="hr1">
     <div class="event2">
@@ -8,22 +24,6 @@
         alt="New Recruit Fall 2021"
         style="border-radius: 7px;"
       />
-    </div>
-    <hr class="hr2">
-    <h1>MCSS PRESENTS <span>CASINO NIGHT</span></h1>
-    <hr class="hr1">
-    <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
-      <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png"
-        :class="{toggled: toggle}"
-        alt="MCSS CASINO NIGHT"
-        style="border-radius: 7px;"
-      />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/424687442362881" target="_blank">
-        <div class="middle">
-          <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
-        </div>
-      </a>
     </div>
     <hr class="hr2">
     <h1>OUR MCSS <span>MERCH IS HERE!</span></h1>
