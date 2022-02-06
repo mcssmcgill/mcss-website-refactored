@@ -4,12 +4,12 @@
     <hr class="hr1">
     <div class="event-container event2 upcoming" v-on:click="toggle = !toggle">
       <b-img-lazy
-        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png"
+        src="https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1644191070/MCSS/Events/inferno_dlqken.png"
         :class="{toggled: toggle}"
         alt="MCSS x DFAD"
         style="border-radius: 7px;"
       />
-      <a class="event-redirect" v-if="toggle" href="https://www.facebook.com/events/424687442362881" target="_blank">
+      <a class="event-redirect" v-if="toggle" href="https://fb.me/e/18rekgzyF" target="_blank">
         <div class="middle">
           <h2 style="font-family: IKEABold;" class="check-it-out">Check out our event page!</h2>
         </div>
@@ -100,16 +100,16 @@ export default {
       ],
       mobile_slides: [
         {
+          title: 'Casino Night 2021',
+          content: 'First Picture',
+          // You can also provide a URL for the image.
+          image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1637030852/MCSS/Casino_Night_FB_1_ljjxry.png',
+        },
+        {
           title: 'A Nightmare on Discord Street',
           content: 'First Picture',
           // You can also provide a URL for the image.
           image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1603140018/MCSS/Events/halloween2020_t5u5cm.jpg',
-        },
-        {
-          title: 'Lunar New Year',
-          content: 'First Picture',
-          // You can also provide a URL for the image.
-          image: 'https://res.cloudinary.com/die52atcc/image/upload/q_auto,f_auto/v1618879245/MCSS/Events/lny_mobile.jpg',
         },
         {
           title: 'Subtle McGill Dating',
