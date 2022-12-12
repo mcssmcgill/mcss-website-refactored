@@ -243,7 +243,7 @@ export default {
           role: 'Senior Advisor',
           image: 'https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800251/MCSS/Copy_of_DSCF5522_dc7kd5.jpg',
           hometown: 'Bangkok, Thailand',
-          major: 'U4 Materials',
+          major: 'U4 Materials Engineering',
           flipped: false,
         },
         {
