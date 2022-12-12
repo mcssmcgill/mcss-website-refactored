@@ -83,8 +83,8 @@
                 </div>
               </div>
               <b-img-lazy
-                src="https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800260/MCSS/DSC_4301_ggjawq.jpg"
-                blank-src="https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800260/MCSS/DSC_4301_ggjawq.jpg"
+                src="https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800260/MCSS/Michelle.jpg"
+                blank-src="https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800260/MCSS/Michelle.jpg"
                 alt="Co-President"
               />
             </transition>
@@ -169,7 +169,7 @@ export default {
           name: 'Amy Huang',
           id: 'amy',
           role: 'VP Internal',
-          image: 'https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800257/MCSS/DSC_4254_oufajc.jpg',
+          image: 'https://res.cloudinary.com/dyi0a7i0a/image/upload/v1670800257/MCSS/amy.jpg',
           hometown: 'Boston, MA',
           major: 'U2 Computer Science & Stats',
           flipped: false,
